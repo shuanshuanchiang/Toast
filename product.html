@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>果醬商品</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- 動畫效果 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+
+	<link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rwd.css">
+	
+
+
+</head>
+<body>
+
+	<!-- top選單 -->
+	<div class="rightBtn -white">
+		<b></b>
+		<b></b>
+		<b></b>
+	</div>
+	<div id='bg'></div>
+	<div class="logo_mb" ><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+	
+	<div class="header_bg" id="top_menu">
+		<div class="header">		
+			<a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+			<a class="logo2" href="index.html"><img src="img/logo_white.png" alt=""></a>
+			<ul class="nav">
+				<li><a href="about.html">ABOUT</a></li>
+				<li class="in_fix"><a href="product.html">JAM</a></li>
+				<li><a href="toast_recipe.html">RECIPE</a></li>
+				<ol>
+					<li><i class="fab fa-facebook-f" aria-hidden="true"></i><a href="#"></a></li>
+					<li><i class="far fa-envelope" aria-hidden="true"></i><a href="#"></a></li>
+					<li><i class="fab fab fa-instagram" aria-hidden="true"></i><a href="#"></a></li>
+				</ol>
+			</ul>
+
+			<ul class="shop">
+				<li class="shop_bagbtn"><a href="" title="Shopping Bag"><i class="fas fa-shopping-basket"></i></a></li>
+				<li class="shop_btn"><a href="order.html">BUY TOAST</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<!-- top選單結束 -->
+
+
+	<div class="product_outter">	
+		<!-- Swiper -->
+		<div class="swiper-container product_kv">
+			<div class="swiper-wrapper ">
+			  <picture class="swiper-slide ">
+				  <source srcset="img/jam_kv_mb.png" media="(max-width: 767px)">
+				  <img src="img/jam_kv.png" alt="">
+			  </picture>
+			  <picture class="swiper-slide ">
+				<source srcset="img/jam_kv_3_mb.png" media="(max-width: 767px)">
+				<img src="img/jam_kv_3.png" alt="">
+			  </picture>
+			  <picture class="swiper-slide ">
+				<source srcset="img/jam_kv_2_mb.png" media="(max-width: 767px)">
+				<img src="img/jam_kv_2.png" alt="">
+			  </picture>
+			
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<h5>JAMS</h5>
+
+		</div>
+	
+
+		<div class="product_select">
+			<p>甜度選擇 ：</p>
+			<div class="select_out">
+				<ul class="select">
+					<li class="sel1" id="suger_off"><a href=""></a></li>
+					<ol class="suger">
+						<li class="sel3 sel4" id="suger1"><a href=""></a></li>
+						<li class="sel3 sel4" id="suger2"><a href=""></a></li>
+						<li class="sel3 sel4" id="suger3"><a href=""></a></li>
+						<li class="sel3 sel4" id="suger4"><a href=""></a></li>
+						<li class="sel3 sel4" id="suger5"><a href=""></a></li>
+					</ol>
+					<li class="sel2" id="suger_add"><a href=""></a></li>		
+				</ul>
+				<p> 偏酸 ----------- 適中 ----------- 偏甜</p>		
+			</div>
+
+			<div class="select_all" > 全部</div>		
+		</div>
+
+		<ul class="items">
+			<li class="sweet">
+				<div class="tag_outter">
+					<div class="tag"></div>
+					<p>季節<br>限定</p>
+				</div>	
+
+				<a ref=""></a><img src="img/jam.png" alt="">
+					<p class="text_tit">草莓果醬<br><span>strabarry</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 12月中 - 4月初</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p class="red">優惠價 &nbsp; | &nbsp; $<b class="price"> 250 </b>元<strike class="nprice">$280</strike></p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_2.png" alt="">
+					<p class="text_tit">百香果果醬<br><span>passion fruit</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 6月初 - 12月</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 220 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<div class="tag_outter">
+					<div class="tag_gold"></div>
+					<p>人氣<br>商品</p>
+				</div>	
+				<a ref=""><img src="img/jam_12.png" alt="">
+					<p class="text_tit">蘋果萊姆果醬<br><span>apple</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 11月 - 2月中</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 220 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_13.png" alt="">
+					<p class="text_tit">紅龍果果醬<br><span>dragon fruit</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 6月 - 11月初</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 180 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_4.png" alt="">
+					<p class="text_tit">芭樂牛奶果醬<br><span>guava x milk</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 7月中 - 4月初</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 250 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_3.png" alt="">
+					<p class="text_tit">奇異果果醬<br><span>kiwi</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 6月初 - 11月</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 240 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_9.png" alt="">
+					<p class="text_tit">藍莓果醬<br><span>bluebarry</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 5月中 - 10月中</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 250 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_10.png" alt="">
+					<p class="text_tit">芒果鳳梨果醬<br><span>mango</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 5月初 - 8月</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 270 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_8.png" alt="">
+					<p class="text_tit">桑椹果醬<br><span>mulbarry</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 4月中 - 6月初</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 250 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet">
+				<a ref=""><img src="img/jam_7.png" alt="">
+					<p class="text_tit">蘋果柑橘果醬<br><span>orange</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 10月 - 2月中</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 250 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn"><i class="fas fa-shopping-basket"></i>Add to bag</a>
+			</li>
+
+			<li class="sweet nosell">
+				<div class="tag_outter">
+					<div class="tag_gray"></div>
+					<p>尚未<br>開賣</p>
+				</div>	
+				<a ref=""><img src="img/jam_1.png" alt="">
+					<p class="text_tit">玫瑰荔枝果醬<br><span>litchi</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 4月中 - 8月初</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 220 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn_nosell"><i class="fas fa-shopping-basket"></i> <strike>Add to bag</strike></a>
+			</li>
+
+			<li class="sweet nosell">
+				<div class="tag_outter">
+					<div class="tag_gray"></div>
+					<p>尚未<br>開賣</p>
+				</div>	
+				<a ref=""><img src="img/jam_14.png" alt="">
+					<p class="text_tit">蜜桃果醬<br><span>peach</span></p>
+					<div class="text">	
+						<p>產 &nbsp;&nbsp; 季 &nbsp; | &nbsp; 5月中 - 9月</p>
+						<p class="circle">甜 &nbsp;&nbsp; 度 &nbsp; | &nbsp; 
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="fas fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+							<span><i class="far fa-circle"></i></span>
+						</p>
+						<p>售 &nbsp;&nbsp; 價 &nbsp; | &nbsp; $<b class="price"> 280 </b>元</p>
+					</div>
+				</a>
+				<a ref="" class="bag_btn_nosell"><i class="fas fa-shopping-basket"></i> <strike>Add to bag</strike></a>
+			</li>
+
+		</ul>
+
+	</div>
+	<!-- /product_outter -->
+
+
+	<!-- lightbox -->
+	<div class="product_jam_outter " id="jam1">
+		<div class="product_jam">
+			<div class="close"></div>
+			<div class="jam_tit">
+				<p id="season"></p>
+				<h1 id="name"></h1>
+				<p id="fruit"></p>
+			</div>
+
+			<div class="from">
+				<p id="loc"></p>
+			</div>
+
+			<div class="jam_box">
+				<p>搭配吐司<br> 更好吃</p>
+			</div>
+
+			<div class="jam_product_txt">
+
+				<img class="jam_txt_pic" src="" alt="" id="img">
+
+				<div class="jam_txt_in">
+					<div class="jam_in_tit">果醬數據 - 240g ± 3g/罐</div>
+					<div class="jam_in">
+						<dl>
+							<dt>水果產地</dt><dd><a ref="" id="location"> <i class="fas fa-angle-right"></i></a></dd>
+							<dt>果醬成分</dt><dd id="in"></dd>
+							<dt>果醬售價</dt><dd id="price"></dd>
+						</dl>
+						<p>最佳賞味期限：
+							務必冷藏，建議於30天內食用完畢。<br>
+							食用方式：
+							請使用乾燥清潔的湯匙挖取，確保嚐鮮期內的果醬不會變質！
+						</p>
+						
+					</div>
+
+					<ul class="jam_in_btn">
+						<li class="ttbuy"><a href="order.html">BUY TOAST</a></li>
+						<li class="jambuy"><a href="#"><i class="fas fa-shopping-basket"></i>Add to bag</a></li>
+					</ul>
+
+				</div>
+			</div>			
+		</div>	
+	</div>
+	<!-- /lightbox -->
+
+
+	 <!-- gotop -->
+	 <div class="gotop">
+		<img src="img/top_arrow.png" alt="" class="top_arrow">
+		<p>top</p>
+		<img src="img/top.png" alt="" class="top">
+	</div>
+	<!-- /gotop -->
+
+
+	<!-- footer -->
+	  <div class="footer">
+	  	<div class="footer_inner">
+	  		<a class="logo" href="index.html"><img src="img/logo_white.png" alt=""></a>
+	  		<p>© TOAST BACKERY , All Rights Reserved</p>
+			<ol class="footer_icon">
+				<li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fab fa-line" aria-hidden="true"></i></a></li>			
+			</ol>
+	  		
+	  	</div>
+	  </div>
+	<!-- footer -->
+
+
+
+<script> </script>
+<!-- 彈跳視窗js -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<script>
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			var window_scrollTop = $(window).scrollTop();
+			// console.log(window_scrollTop);
+			if(window_scrollTop >= 0 && window_scrollTop < 270){
+				$('.rightBtn').addClass('-white');
+			}else{
+				$('.rightBtn').removeClass('-white');
+			};
+		});
+	});
+	
+	
+    var swiper = new Swiper('.swiper-container', {
+	  spaceBetween: 0,
+	  speed:1500,
+	  autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+      	},
+      pagination: {
+        el: '.swiper-pagination',
+		clickable: true,
+      },
+    });
+
+
+	</script>
+ 
+	<script src="js/main.js"></script>
+	<!-- <script src="js/test.js"></script> -->
+</body>
+</html>

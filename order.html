@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂購表單</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- 日曆 -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- 動畫效果 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rwd.css">
+	
+
+
+
+</head>
+<body>
+    <!-- top選單 -->
+	<div class="rightBtn -white">
+		<b></b>
+		<b></b>
+		<b></b>
+	</div>
+	<div id='bg'></div>
+	<div class="logo_mb" ><a href="index.html"><img src="img/logo_white.png" alt=""></a></div>
+
+	<div class="header_bg" id="top_menu">
+		<div class="header">		
+			<a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+			<a class="logo2" href="index.html"><img src="img/logo_white.png" alt=""></a>
+			<ul class="nav">
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="product.html">JAM</a></li>
+				<li><a href="toast_recipe.html">RECIPE</a></li>
+				<ol>
+					<li><i class="fab fa-facebook-f" aria-hidden="true"></i><a href="#"></a></li>
+					<li><i class="far fa-envelope" aria-hidden="true"></i><a href="#"></a></li>
+					<li><i class="fab fab fa-instagram" aria-hidden="true"></i><a href="#"></a></li>
+				</ol>
+			</ul>
+
+			<ul class="shop">
+				<li class="shop_bagbtn"><a href="" title="Shopping Bag"><i class="fas fa-shopping-basket"></i></a></li>
+				<li class="shop_btn"><a href="order.html">BUY TOAST</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<!-- top選單結束 -->
+	
+	<!-- 吐司訂購表單 -->
+    <div class="order_out">
+		<section class="order">
+			<h1><span>About</span> Order</h1>
+			<div class="line" style="width: 25%; border-color: #fff;"></div>
+
+			<div class="order_txt">
+				<div class="txt_lift">現場購買</div>
+				<div class="txt_right">請於營業時間 <em>週一至週六 11:00 - 19:30</em> 前往 TOAST BACKERY 現場購買  </div>
+			</div>
+
+			<div class="order_txt">
+				<div class="txt_lift">預訂吐司</div>
+				<div class="txt_right">
+					<ul class="buy">
+						<li><em>於預訂取貨3日前<br>填寫預定表單並且匯款</em> <i class="fas fa-angle-right"></i></li>
+						<li>靜候專員<br>來電通知 <i class="fas fa-angle-right"></i></li>
+						<li>等待約定日期<br>來店取貨</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="order_txt notetop">
+				<div class="txt_lift">注意事項</div>
+				<div class="txt_right">
+					<ul class="note">
+						<li><em>吐司的預訂採取先匯款並到店取貨的方式。</em></li>
+						<li>我們將於表單提交後1日內與您聯繫，若超過2日未聯繫，請來電詢問。</li>
+						<li>填寫表單後如需修改，請來電聯繫。</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="order_txt">
+				<div class="txt_lift">聯繫我們</div>
+				<div class="txt_right tel">
+					<p> Tel : <b>02-2576-897</b></p>
+					<p>Mobile : <b>0973-616-527</b></p>
+				</div>
+			</div>
+
+			<div class="order_icon">
+				<ul>
+					<li><i class="fab fa-facebook-square"></i></li>
+					<li><i class="fab fa-instagram"></i></li>
+					<li><i class="fab fa-line"></i></li>
+				</ul>
+			</div>	
+		</section>
+
+		<!-- 表單填寫 -->
+		<section class="form_out">
+			<h1>Order Form</h1>
+			<div class="line"></div>
+			<small>
+				<span>＊ 吐司預定請於取貨3日前填寫表單</span><br>
+				<span>＊ 每日吐司出爐數量有限，如需大量訂購，請聯繫我們</span>
+			</small>
+			<form action="">
+				<ul class="form">
+					<li class="count">
+						<p>訂購數量<b>*必填</b></p>
+						<div>
+							<input class="f_toast" type="radio" name="count" />
+							<span>1條</span>
+							<input class="f_toast" type="radio" name="count" />
+							<span>2條</span>
+							<input class="f_toast" type="radio" name="count" />
+							<span>3條</span>
+							<input class="f_toast" type="radio" name="count" />
+							<span>4條</span>
+							<!-- <input class="f_toast" type="radio" name="count" />
+							<span>5條</span> -->
+						</div>	
+					</li>
+					<li>
+						<p>姓名<b>*必填</b></p>
+						<input type="text" class="f_name" id="f_name">
+					</li>
+					<li>
+						<p>聯絡電話<b>*必填</b></p>
+						<input type="text" class="f_phone">
+					</li>
+					<li>
+						<p>Line ID</p>
+						<input type="text" class="f_line">
+					</li>
+					<li>
+						<p>E-mail</p>
+						<input type="text" class="f_mail">
+					</li>
+					<li class="datetest">
+						<p class="datag">取貨日期<b>*必填</b> </p>
+						<input type="text" class="f_date" id="datepicker" value="" name='datepicker'>
+						<!-- <p>取貨日期<b>*必填</b></p>
+						<input type="text" class="f_date" id="datepicker"> -->
+					</li>
+					<li class="f_upbox">
+						<p>取貨時間<b>*必填</b></p>
+						<div>
+							<input class="f_time" type="radio" name="time" />
+							<span>中午 12:00 - 14:00 </span><br>
+							<input class="f_time" type="radio" name="time" />
+							<span>下午 14:00 - 17:00  </span><br>
+							<input class="f_time" type="radio" name="time" />
+							<span>傍晚 17:00 - 19:30 </span>
+						</div>
+					</li>
+
+					<div class="line" style="width: 100%;"></div>
+
+					<li>
+						<p>匯款人<b>*必填</b></p>
+						<input type="text" class="m_name">
+					</li>
+					<li>
+						<p>匯款金額<b>*必填</b></p>
+						<input type="text" class="m_total">
+					</li>
+					<li>
+						<p>帳號後五碼<b>*必填</b></p>
+						<input type="text" class="m_five">
+					</li>
+					<li class="f_upbox">
+						<p>其他</p>
+						<textarea></textarea>
+					</li>
+					<button type="submit" class="f_btn">Order</button>
+
+				</ul>
+			</form>
+			
+		</section>
+		
+	</div>
+	
+	<!-- 吐司注意事項 -->
+	<div id="trigger_gotop"></div>
+	<div class="notice_out">
+		<section class="notice">
+			<h1><span>TOAST</span> NOTICE</h1>
+			<div class="line" style="width: 25%;"></div>
+
+			<ul class="notice_txt">
+				<li>
+					<div class="num">1</div>
+					<img src="img/notice_1.png" alt="">
+					<p>開封後的吐司，請不要封口讓熱氣散開，待完全冷卻後在封口。</p>
+				</li>
+				<li>
+					<div class="num">2</div>
+					<img src="img/notice_2.png" alt="">
+					<p>吐司降溫後，使用附贈的束帶使用附贈的束帶密封，可使吐司避免與空氣接觸，失去水份並老化。</p>
+				</li>
+				<li>
+					<div class="num">3</div>
+					<img src="img/notice_3.png" alt="">
+					<p>若預估食用期間為2日以上，請購買切片吐司並分裝冷凍。</p>
+				</li>
+
+			</ul>
+
+		</section>
+	</div>
+
+
+	<!-- gotop -->
+	<div class="gotop">
+		<img src="img/top_arrow.png" alt="" class="top_arrow">
+		<p>top</p>
+		<img src="img/top.png" alt="" class="top">
+	</div>
+	<!-- /gotop -->
+
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer_inner">
+			<a class="logo" href="index.html"><img src="img/logo_white.png" alt=""></a>
+			<p>© TOAST BACKERY , All Rights Reserved</p>
+		  <ol class="footer_icon">
+			  <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+			  <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+			  <li><a href="#"><i class="fab fa-line" aria-hidden="true"></i></a></li>			
+		  </ol>
+			
+		</div>
+	</div>
+	<!-- footer -->
+
+
+
+
+
+<script> </script>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<script>
+
+	$(document).ready(function () {
+		$(window).scroll(function () {
+            var window_scrollTop = $(window).scrollTop();
+            // console.log(window_scrollTop);
+            if(window_scrollTop >= 0 && window_scrollTop < 1200){
+                $('.rightBtn').addClass('-white');
+            }else{
+				$('.rightBtn').removeClass('-white');
+			};
+        });
+
+
+		$('input[name="count"]')[0].checked = true; //預設為第一個radio
+		$('input[name="time"]')[0].checked = true; 
+
+        $("form").submit(function() {
+			let undone = '<b>尚未填寫</b>';
+			
+			// let method =$("input[name='count']:checked").val(); //radio取值
+			// if( typeof(method) == "undefined"){ //完全沒有選取的寫法
+			// 	$('.count>div').addClass('undone_count').after(undone);
+			// return false;
+			// };
+
+            if ($('.f_name').val() == "") {
+				$('.f_name').removeClass('-error').parent().find('b').last().remove();
+				$('.f_name').addClass('-error').after(undone); 
+                return false;
+            }else if($('.f_phone').val() == ""){
+				$('.f_phone').addClass('-error').after(undone);
+				return false;
+			}else if($('.m_name').val() == ""){
+				$('.m_name').addClass('-error').after(undone);
+				return false;
+			}else if($('.m_total').val() == ""){
+				$('.m_total').addClass('-error').after(undone);
+				return false;
+			}else if($('.m_five').val() == ""){
+				$('.m_five').addClass('-error').after(undone);
+				return false;
+			}else {
+                return true;
+            };
+        });
+	});
+
+		//表單事件_日曆
+		$(function() {
+        $("#datepicker").datepicker({
+          //可使用下拉式選單 - 月份
+          changeMonth : true,
+          //可使用下拉式選單 - 年份
+          changeYear : true,
+          //設定 下拉式選單月份 在 年份的後面
+          showMonthAfterYear : true
+        });
+      });
+      
+      $(function() {
+        ( function( factory ) {
+        if ( typeof define === "function" && define.amd ) {
+        // AMD. Register as an anonymous module.
+        define( [ "../widgets/datepicker" ], factory );
+        } else {
+        // Browser globals
+        factory( jQuery.datepicker );
+        }
+        }( function( datepicker ) {
+        datepicker.regional[ "zh-TW" ] = {
+        closeText: "關閉",
+        prevText: "&#x3C;上個月",
+        nextText: "下個月&#x3E;",
+        currentText: "今天",
+        monthNames: [ "一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月" ],
+        monthNamesShort: [ "一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月" ],
+        dayNames: [ "星期日","星期一","星期二","星期三","星期四","星期五","星期六" ],
+        dayNamesShort: [ "週日","週一","週二","週三","週四","週五","週六" ],
+        dayNamesMin: [ "日","一","二","三","四","五","六" ],
+        weekHeader: "週",
+        dateFormat: "yy-mm-dd",
+		firstDay: 1,
+		minDate: 4,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: "年" };
+        datepicker.setDefaults( datepicker.regional[ "zh-TW" ] );
+        return datepicker.regional[ "zh-TW" ];
+        } ) );
+      
+      });
+	
+
+	
+</script>
+<script src="js/main.js"></script>
+<!-- <script src="js/test.js"></script> -->
+    
+</body>
+</html>
