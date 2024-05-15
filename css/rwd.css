@@ -1,0 +1,1634 @@
+@media screen and (max-width: 1366px) {
+.mobile{
+    display: block;
+}
+
+section { 
+    width: 85vw;
+}  
+
+.toast_outter {
+    top: -65px;
+}
+
+.toast_pic {
+    margin-top: 15px;
+}
+
+.toast>img {
+    width: 28vw;
+}
+
+.inner_toast {
+    width: calc(100% - 120px);
+}
+
+
+.main_jam {
+    /* height: 700px; */
+}
+
+.jam_outter {
+    margin-top: 390px;
+}
+.jam_txt{
+    width: 180px;
+}
+
+.jamjar {
+    width: 80vw;
+}
+
+.recipe {
+    margin: 0px auto;
+}
+
+.recipe_outter>img {
+    width: 320px;
+    padding-top: 10%;
+}
+
+.recipe_btn .btn {
+    margin: 20px 30px 70px;
+}
+
+.address {
+    margin: 100px auto 150px;
+}
+
+.contact .mrt {
+    width: 100px;
+    height: 100px;
+    padding-top: 26px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.contact img {
+    width: 165px;
+    height: 30px;
+}
+
+.slick-current .tag_outter {
+    top: 0;
+    right: 0;
+}
+
+.o-product__before-after {
+    width: calc(100% - 120px);
+    margin-top: 0px;
+}
+
+/*----------------------------jam product 果醬商品頁面 -----------------------------*/
+
+.product_outter{
+    width: 100%;
+}
+
+.product_select{
+    width: 85%;
+    padding: 30px 20px 45px;
+}
+
+.items{
+    width: 90%;
+}
+
+.items li{
+    width:33%;
+    padding: 30px 30px 50px;
+}
+
+/*----------------------------吐司料理頁面 -----------------------------*/
+
+.join_txt {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 500px;
+    border: 2px dotted #011b45;
+}
+
+.joinbtn{
+	position: absolute;
+	top: 84%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+.joinbtn::after{
+    display: none;
+}
+
+.meal_outter h1{
+	padding: 25% 0 60px;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.main_news {
+    width: 750px;
+}
+
+.news {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.main_time {
+    margin: 180px auto 200px;
+}
+
+.icon_say_out{
+	display: none;
+}
+
+/* .main_time .pic {
+    width: 250px;
+    top: 180px;
+    right: 10%;
+} */
+
+.toast_outter {
+    top: -60px;
+}
+
+.toast_pic {
+    margin-top: 10px;
+}
+
+.toast>img {
+    right: -165px;
+    bottom: -11px;
+}
+
+/* .inner_toast {
+    height: 400px;
+    top: -250px;
+} */
+
+
+}
+
+
+@media screen and (max-width: 990px) {
+.mobile{
+    display: none;
+} 
+
+.mask{
+    display: block;
+    z-index: 99;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .5s;
+}
+
+
+.header_bg{
+    /* display: none; */
+    background-color: #011b45;
+    right: -75vw;
+    top: 0;
+    width: 75vw;
+    height: 100vh;
+    transition: all .5s;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 13vh;
+
+}
+
+.rightBtn {
+    display: block;
+}
+
+.logo{
+    display: none;
+    
+}
+.logo2{
+    display: block;
+    margin-bottom: 40px;
+}
+
+.logo_mb{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 2;
+}
+
+.logo_mb img{
+	width: 100px;
+}
+
+.nav{    
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nav>li{
+    margin: 10px 0;
+    border-top: 3px solid #011b45;
+	border-bottom: 3px solid #011b45;
+}
+
+.nav .in,.nav .in_fix{
+	border-top: 3px solid #011b45;
+	border-bottom: 3px dotted #c0a980;
+}
+
+.nav li a{
+    color: #fff;
+}
+
+.nav ol{
+    color: #fff;
+    display: flex;
+    
+}
+
+.shop{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    width: 100%;
+    
+}
+
+.shop li{
+    line-height: 50px;
+    margin: 10px 0;
+}
+
+.shop i{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.shop li a::after{
+    content: attr(title);
+    color: #fff;
+    font-weight: 700;
+}
+
+.shop_btn{
+    padding-left: 0px;
+    background-image: none;
+    border: 1px solid #dfc48f;
+    background-color: #dfc48f;
+
+}
+.shop_btn:hover{
+    background-image: none;
+    background-color: #011b45;
+}
+
+.shop_btn a{
+    line-height: 50px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    /* border: 1px solid #dfc48f; */
+    background-color: transparent;
+	padding-left: 60px;
+	background-image: url(../img/icon_toast.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 15px center;
+	transition: .3s;
+}
+
+.shop_btn:hover a{
+	display: none;
+	background-color: #011b45;
+	background-image: url(../img/icon_toast_g.png);
+}
+
+.shop_btn,.shop_bagbtn{
+    width: 100%;
+}
+
+.shop_bagbtn {
+    background-image: none;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.shop_bagbtn a{
+    line-height: 50px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.shop_bagbtn:hover {
+    border: 1px solid #dfc48f;
+}
+
+.shop_bagbtn:hover i , .shop_bagbtn:hover a::after{
+    color: #dfc48f;
+}
+
+.shop_btn:hover a{
+	display: block;
+	background-color:transparent;
+	background-image: url(../img/icon_toast_g.png);
+	/*width: 170px;*/
+}
+
+.main{
+    width: 100%;
+    margin-top: 0px;
+    /* background-size: cover; */
+    /* background-image: url(../img/main_visual_1_mb.jpg); */
+}
+
+.kv1{
+	background-image: url(../img/main_visual_1_mb.jpg);
+}
+.kv2{
+	background-image: url(../img/main_visual_2_mb.jpg);
+}
+
+.main>img {
+    width: 20%;
+}
+
+.main>p{
+    display: none;
+}
+
+.main_news {
+    width: 90%;
+}
+
+.main_news h3 {
+    margin-left: 0px;
+}
+
+.news_outter{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	align-items: unset;
+}
+
+.news_outter li{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.news_outter li img{
+	width: 100px;
+	height: 100px; 
+}
+
+.news{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+
+.main_time {
+    min-width: 100%;
+    margin: 480px auto 200px;
+}
+
+.time {
+    width: 90%;
+}
+
+.main_time .pic {
+    /* width: 180px; */
+    top: 250px;
+    right: 3%;
+}
+
+.main_time .dot {
+    right: 18%;
+}
+
+.main_time .down {
+    right: 75%;
+}
+
+.main_toast {
+    height: 700px;
+}
+
+.toast_outter {
+    flex-direction: column;
+    top: -85px;
+    left: 0px;
+	/* left: 80px; */
+}
+
+.toast {
+   margin: 30px auto;
+    width: 90%;
+    order: 1;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.title h1 span{
+    color: #c4ad80;
+}
+
+.toast p {
+    text-align: center;
+}
+
+.r_style{
+    max-width: 370px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.r_style .btn{
+    display: flex;
+    margin: 0 auto;
+}
+
+.toast_pic {
+    order: 0;
+    width: 80%;
+    margin-left: 19%;
+}
+
+.toast>img {
+    right: 66%;
+    bottom: 110%;
+    width: 32vw;
+}
+
+.btn a {
+    justify-content: center;
+}
+
+.inner_toast {
+    position: static;
+    /* top: -70px; */
+    height: 400px;
+    width: calc(100% - 20px);
+}
+
+.inner_toast li>img{
+    display: none;
+}
+
+.inner_toast ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: static;
+    margin-top: 470px;
+}
+
+.inner_toast li {
+    flex-basis: 33%;
+    margin: 0 1%;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+.inner_toast li a {
+    margin-bottom: 0px;
+    background-size: contain;
+    width: 130px;
+	height: 130px;
+}
+
+
+.btn1 a,.btn2 a,.btn3 a{
+	position: static;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.btn1,.btn2,.btn3{
+	position: static;
+	top: 0;
+	left: 0;
+}
+
+.btn1 a {background-image: url(../img/inner_2.png);}
+.btn2 a {background-image: url(../img/inner_1.png);}
+.btn3 a {background-image: url(../img/inner_3.png);}
+
+.btn1 a:hover,.btn2 a:hover,.btn3 a:hover { transform: scale(1)}
+
+
+.inner_text {
+    color: #011b45;
+    margin-top: 0px;
+}
+
+.inner_toast h4{
+	text-shadow: none
+	
+}
+
+
+.inner_toast h4::before{
+    display: none;
+}
+
+.inner_toast h4::after{
+    display: none;
+}
+.inner_toast p{
+	text-shadow:none;
+}
+
+.main_jam {
+    background-position: center center;
+    padding-top: 0px;
+}
+
+.jam_outter{
+    flex-direction: column;
+    order: 1;
+    margin-top: 440px;
+}
+
+.jam_r{
+    width: auto;
+}
+
+.jam_l{
+    width: 100%;
+    order: 0;
+    margin-left: 0;
+}
+
+.jam_outter h1 span{
+    color: #fff;
+}
+
+.o-product__before-after{
+    margin-top: 100px;
+    width: calc(100% - 20px);
+}
+
+
+.address{
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 400px;
+}
+
+.contact{
+    order: 0;
+    width: 100%;
+    margin: 0 auto 40px;
+}
+
+
+/*----------------------------關於吐司頁面 -----------------------------*/
+.about_kv>img {
+    width: 45%;
+}
+
+.about_outter {
+    flex-direction: column;
+    text-align: center;
+}
+
+.str_l {
+    text-align: center;
+}
+
+.about_descrip_out{
+    width: 75%;
+    margin: 0 auto;
+    /* height: 500px; */
+    /* min-width: 300px; */
+}
+
+.about_descrip{
+    flex-direction: column;
+    padding: 20px 20px 41vw;
+    margin: 10px;
+}
+
+.about_descrip img{
+    width:100%;
+    top: 370px;
+}
+
+.descrip_txt{
+    width: 330px;
+    /* text-align: center; */
+}
+
+.descrip_txt .line_l {
+    width: 100%;
+    margin: 10px auto 20px;
+}
+
+.descrip_price{
+    justify-content: space-between;
+
+}
+
+.descrip_price p {
+    margin-right: 0;
+}
+
+.about_partner {
+    width: 90%;
+}
+
+.in_txt:hover{
+	width:85%;
+}
+
+.in_tit_out{
+    top: 3%;
+}
+
+.in_tit{
+	/* margin-bottom: 40px; */
+}
+
+/*----------------------------jam product 果醬商品頁面 -----------------------------*/
+.product_outter{
+    padding-top: 0px;
+}
+
+.product_kv h5 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+
+.items{
+    width: 90%;
+}
+
+.items li{
+    width:33%;
+    padding: 30px 15px 50px;
+}
+
+.items .text p{
+    padding: 0 10px;
+
+}
+
+.product_jam{
+    top: 0;
+    width: 95%;
+
+    /* height: 80vh; */
+    /* max-width: 700px; */
+    /* min-height: 750px; */
+    max-height: 95vh;
+    overflow: hidden;
+    overflow-y: scroll;
+	margin: 50px auto;
+	padding: 40px;	
+}
+
+.jam_product_txt{
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.close::after {
+    right: -20px;
+    top: -20px;
+}
+
+.jam_in_tit {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.jam_txt_in {
+    width: 100%;
+}
+
+.jam_box{
+    display: none;
+}
+
+.jam_in {
+    padding: 10px;
+}
+
+
+
+/*----------------------------吐司料理頁面 -----------------------------*/
+.meal_outter {
+    padding-top: 50px;
+}
+
+.meal_main {
+    background-size: 1500px;
+    height: 540px;
+}
+
+.meal_all {
+    width: 90%;
+}
+
+/*--------------------吐司料理內頁-----------------------*/
+
+.meal_other_out{
+	overflow-x: scroll;
+}
+.meal_outter h1 {
+    padding: 35% 0 60px;
+}
+
+.toster_meal {
+    width: 100%;
+}
+
+.toster_meal_in{
+    /* flex-direction: column; */
+    margin: 0px auto;
+}
+
+.toster_meal_kv {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.toster_meal_kv h5 {
+    font-size: 32px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.toster_meal_in p {
+    width: 100%;
+}
+
+.toster_meal_in p span {
+    text-align: center;
+}
+
+.toster_meal_block{
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.toster_meal_txt {
+    width: 90%;
+}
+
+
+.toster_meal_block img {
+    width: 90%;
+    margin: 0 auto 30px;
+}
+.toster_meal_other {
+    background-color: #e7e6e4;
+    padding: 80px 0;
+    margin-top: 130px;
+}
+
+
+
+/*--------------------------------表單填寫-----------------------------------*/
+.form_out{
+    width: 95%;
+}
+
+
+/*----------------------------gotop -----------------------------*/
+.gotop{
+    /* right: 50%; */
+    transform: translateX(-50%);
+    left: 50%;
+    
+}
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+.mobile{
+    display: block;
+}  
+
+.main>img {
+    width: 25%;
+}
+
+.main_time {
+    width: 100%;
+}
+
+.main_time .dot {
+    width: 60px;
+}
+
+.main_time .pic {
+    top: 300px;
+}
+
+.main_toast {
+    height: 560px;
+}
+
+.inner_toast {
+    height: 300px;
+}
+
+.inner_toast ul {
+    margin-top: 350px;
+    flex-direction: column;
+}
+
+.inner_toast li {
+    /* flex-basis: 33%; */
+    text-align: left;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inner_text {
+    min-width: 240px;
+    margin-left: 20px;
+}
+
+
+.jam_outter {
+    margin-top: 670px;
+}
+
+
+.o-product__before-after {
+    margin-top: 250px;
+    width: calc(100% - 20px);
+}    
+
+.jam_bake{
+    left: 4%;
+}
+
+.jam_txt{
+    width: 180px;
+	right: 2vw;
+    bottom: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.jam_txt>p{
+    display: none;
+}
+
+
+.btn .btn_arrow{
+    background-size: 10px;
+    width: 35px;
+    height: 35px;
+    margin: 5px 10px;
+}
+
+.white p{
+    margin-top: 15px;
+	color: #fff;
+}
+
+.jamjar {
+    width: 100%;
+    overflow: scroll;
+}
+
+.jar {
+    width: 1200px;
+    overflow-x: hidden;
+}
+
+.jar li span.thisjam{
+	display: none;
+}
+
+.recipe_btn {
+    width: 370px;
+}
+
+.recipe_btn .btn {
+    margin: 20px 10px 70px;
+}
+
+iframe {
+    height: 250px;
+}
+
+/*----------------------------關於吐司頁面 -----------------------------*/
+.about_partner {
+    margin: 130px auto;
+}
+
+.about_txt h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.about_txt> p{
+    padding-top: 30px;
+}
+
+.icon_out{
+	margin: 20px auto 0px;
+}
+
+.about_icon{
+    width: 80%;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items:stretch;
+}
+
+.about_icon li{
+    flex-basis: 42%;
+    margin: 20px auto;
+    /* outline: 1px solid red; */
+}
+
+.about_icon li>img{
+	width: 40%;
+}
+
+.about_outter {
+    margin-top: 15%;
+}
+
+.about_descrip_out {
+    width: 90%;
+}
+
+.descrip_txt {
+    padding: 20px 15px;
+}
+
+.about_descrip {
+    padding: 10px 20px 54vw;
+}
+
+.partner_slider .swiper-container .swiper-pagination{
+    display: none;
+}
+
+.in_txt {
+    width:100%;
+    height: 18%;
+}
+
+.in_txt_more{	
+    flex-direction: column;
+    top:50%;
+    right: 50%; 
+    transform: translate(50%,-50%);
+}
+
+.in_txt i{	
+    order: 0;
+    transform: rotate(-90deg);
+}
+.in_txt p{
+    order: 1;
+    margin-left: 0;
+}
+.in_txt:hover{
+    width:100%;
+	height:100%;
+}
+
+.in_tit_out{
+    padding:30px;
+    width: 100%;
+    top: 10%;
+    right: 0%;
+    left: 0;
+    /* transform: translate(-50%,-50%); */
+
+}
+
+.partner_logo img{
+	width: 15.6%;
+}
+
+
+/*----------------------------footer -----------------------------*/
+
+.footer_inner {
+    flex-direction: column;
+}
+
+.footer .logo img{
+    display: none;
+    /* width: 60px; */
+}
+
+.footer p{
+    /* margin-top: 10px; */
+    order: 1;
+}
+
+.footer_icon{
+    /* width: 100px; */
+    margin-bottom: 10px;
+    order: 0;
+}
+
+.footer_icon .fab{
+	font-size: 22px;
+}
+
+
+
+/*----------------------------jam product 果醬商品頁面 -----------------------------*/
+
+.product_select{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.select_out{
+    margin: 20px auto;
+}
+.select{
+    width: 320px;
+    margin-left: 0;
+}
+.select_out p {
+    padding-left: 0px;
+}
+
+.select_all {
+    width: 65%;
+    margin-left: 0;
+}
+.select .suger {
+    flex-basis: 230px;
+}
+
+.suger li {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+}
+
+.items{
+    width: 95%;
+}
+
+.items li{
+    width:50%;
+    padding: 30px 15px 50px;
+}
+
+.items .text p{
+    padding: 0 10px;
+    font-size: 12px;
+}
+.items img {
+    transform: scale(1);
+}
+
+.price {
+    font-size: 16px;
+}
+
+.product_jam{
+	padding: 30px 15px 40px;	
+}
+
+.jam_product_txt>img {
+    transform: scale(1.5);
+    margin-bottom: 10px;
+}
+
+.jam_product_txt{
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.close::after {
+    right: 0;
+    top: -10px;
+}
+
+.from{
+    display: none;
+}
+
+.jam_txt_in {
+    width: 100%;
+}
+
+.jam_box{
+    display: none;
+}
+
+.jam_in dt, .jam_in dd {
+    font-size: 12px;
+}
+
+.jam_in dd {
+    padding-left: 10px;
+}
+
+.jam_in {
+    padding: 10px;
+}
+
+/*----------------------------吐司料理頁面 -----------------------------*/
+
+.join_txt {
+    width: 75%;
+}
+
+.joinbtn{
+    top: 90%;
+    width: 210px;
+}
+
+.meal_outter {
+    background-size: 60%, 0, 0, contain;
+}
+
+.meal_outter h1{
+	padding: 45% 0 60px;
+}
+
+.w50{
+	flex-basis: 49%;
+}
+
+.w50_l{
+	flex-basis: 49%;
+	margin-top: 0%;
+}
+
+.w25{
+	flex-basis:49%;
+}
+.meal_all li:nth-child(6),.meal_all li:nth-child(12){
+	margin-top: 0%;
+
+}
+
+
+/*--------------------------------表單填寫-----------------------------------*/
+.order h1 {
+    padding-top: 120px;
+}
+
+.order_txt, .order_icon {
+    margin: 60px auto;
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0;    
+}
+
+.txt_lift {
+    margin-right: 0; 
+    margin-bottom: 20px;
+}
+
+.txt_right{
+    width: 300px;
+    /* width: 50%; */
+}
+
+.notetop {
+    align-items: center;
+}
+
+.buy{
+	flex-direction: column;
+}
+
+.buy li{
+	flex-direction: column;
+}
+
+.buy li .fas {
+    margin: 10px;
+    transform: rotate(90deg);
+}
+
+.form_out {
+    width: 90%;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form {
+    padding: 30px 20px;
+}
+
+.tel{
+    flex-direction: column;
+    text-align: center;
+}
+
+.tel p:first-child::after{
+    display: none;
+}
+
+.form li p {
+    margin-right: 5px;
+    width: 120px;
+}
+
+
+.f_line, .f_mail {
+    width: 260px;
+    margin-left: 0px;
+}
+
+.notice_txt {
+    width: 80%;
+    flex-direction: column;
+}
+
+.notice_txt li{
+	flex-basis: 33%;
+	margin: 5% auto;
+}
+
+textarea {
+    width: 260px;
+    margin-left: 0px;
+}
+
+
+
+/*--------------------吐司料理內頁-----------------------*/
+
+
+.toster_meal_txt {
+    width: 100%;
+}
+
+.toster_meal_in{
+    flex-direction: column;
+}
+
+.toster_meal_in img {
+    width: 50%;
+    margin: 60px auto 20px;
+}
+
+.txt_make li img {
+    width: 100%;
+}
+
+.meal_other_block ul {
+    height: 260px;
+}
+
+.recom_items li {
+    width: 150px;
+}
+
+.say {
+    line-height: 1.5;
+}
+
+.txt_items dt {
+    width: 39%;
+}
+
+
+}
+
+@media screen and (max-width: 414px) {
+
+.main {
+    height: 550px;
+} 
+
+.main_news {
+    top: 90%;
+}
+
+.news_outter li {
+    margin-bottom: 10px;
+}
+
+.news_outter li img {
+    width: 60px;
+    height: 60px;
+}
+
+.news {
+    margin-top: 10px;
+}
+
+.main_time {
+    /* overflow-x: hidden; */
+    background-image: none;
+    margin: 340px auto 200px;
+}
+
+.time {
+    width: 90%;
+    padding: 20px 0 40px;
+}
+
+.main_time .down {
+    top: 340px;
+}
+
+ h1 {
+    font-size: 2rem;
+}
+
+.title img {
+    width: 25px;
+    height: 25px;
+}
+
+.main_toast {
+    height: 450px;
+}
+
+.inner_toast {
+    height: 200px;
+}
+
+.inner_toast ul {
+    margin-top: 230px;
+}
+.inner_toast li {
+    width: 350px;
+}
+
+.inner_toast li a {
+    width: 90px;
+    height: 70px;
+}
+
+.say_choose img {
+    margin-left: 25px;
+}
+
+.jam_outter {
+    height: 0;
+    margin-top: 540px;
+}
+
+.o-product__before-after {
+    margin-top: 80px;
+}
+
+.jam_bake {
+    left: 2%;
+}
+
+.bake_btn {
+    line-height: 1;
+    font-size: 10px;
+}
+
+.bake_btn img {
+    width: 25px;
+}
+
+.jam_txt {
+    right: 0vw;
+}
+
+.jar {
+    width: 800px;
+}
+
+.recipe_outter {
+    margin: 90px auto 0;
+}
+.slick-current .tag_outter {
+    transform: scale(.5);
+}
+
+.slick-current p {
+    font-size: 10px;;
+}
+
+.slick-current p:after{
+    width: 55%;
+    left: 23%;
+}
+
+.slick-track {
+    padding: 50px 0;
+}
+
+
+
+.address {
+    margin: 100px auto 130px;
+}
+
+
+/*----------------------------關於吐司頁面 -----------------------------*/
+
+.about_kv {
+    background-image: url(../img/about_bg_mb.png);
+}
+
+.about_kv>img {
+    width: 50%;
+    padding-top: 70px;
+}
+
+.about_txt h1 ,.about_outter h1,.about_descrip h1 {
+    font-size: 2rem;
+}
+
+.about_outter {
+    margin-top: 27%;
+}
+
+.about_icon li>img {
+    width: 50%;
+}
+.about_descrip {
+    margin: 0;
+}
+
+.about_descrip_out {
+    padding: 10px;
+}
+
+.descrip_txt {
+    max-width: 270px;
+    padding: 10px;
+    width: 100%;
+}
+.descrip_price span {
+    font-size: 26px;
+}
+
+.about_descrip img {
+    top: 315px;
+}
+
+/*----------------------------jam product 果醬商品頁面 -----------------------------*/
+/* .select {
+    width: 310px;
+}
+
+.select .suger {
+    flex-basis: 230px;
+}
+
+.suger li {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+} */
+
+.items{
+    width: 95%;
+}
+
+.items li{
+    width:50%;
+    padding: 20px 5px 30px;
+}
+.items .text p{
+    height: 35px;
+    line-height: 35px;
+}
+
+.ttbuy a {
+    background-position: 12% center;
+}
+
+.nprice {
+    padding-left: 2px;
+}
+
+.tag_outter {
+    top: 0;
+    right: 0;
+    transform: scale(.8);
+}
+
+/*----------------------------吐司料理頁面 -----------------------------*/
+
+.meal_outter {
+    padding-top: 60px;
+    background-size: 100%, 0, 0, contain;
+}
+
+.meal_main {
+    background-size: 1000px;
+    height: 430px;
+}
+
+.join_txt {
+    width: 85%;
+    padding: 40px 0;
+}
+
+.meal_other_block ul {
+    height: 200px;
+    min-width: 740px;
+}
+
+.meal_outter h1 {
+    padding: 70% 0 60px;
+}
+
+
+/*--------------------------------表單填寫-----------------------------------*/
+
+.count{
+    flex-direction: row;
+}
+
+.form li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form li span {
+    margin-right: 5px;
+}
+
+
+.form_out .line{
+    width: 50%;
+}
+
+.f_name, .f_phone, .f_line, .f_mail, .f_date, .m_name, .m_total, .m_five, .f_other {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+
+
+}
